@@ -3,6 +3,10 @@
   <groupId>gitciselenium</groupId>
   <artifactId>gitciselenium</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+   <properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+   </properties>
    <dependencies>
        <dependency>
          <groupId>org.testng</groupId>
@@ -34,8 +38,7 @@
           <includes>
             <include>SeleniumDemo.java</include>
           </includes>
-	     <source>1.8</source>
-            <target>1.8</target>
+	    
         </configuration>
    
    </plugin>
