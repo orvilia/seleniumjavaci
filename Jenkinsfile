@@ -8,6 +8,6 @@ node {
        }
        
        dir("target") {
-	   bat "java -jar com.test-1.0-SNAPSHOT.jar"
+	   bat "java -jar gitciselenium-0.0.1-SNAPSHOT"
        }
 }
