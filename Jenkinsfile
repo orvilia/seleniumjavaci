@@ -3,10 +3,10 @@ node {
 		git "https://github.com/orvilia/seleniumjavaci"
 		}
 	stage ('Build'){
-    	dir("seleniumjavaci") {
+       {
 	   bat "mvn clean install"
        }
-       	dir("seleniumjavaci/target") {
+       	dir("target") {
 	   bat "java -jar com.test-1.0-SNAPSHOT.jar"
        }
 		}
