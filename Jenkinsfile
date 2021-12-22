@@ -1,9 +1,9 @@
 node {
 	stage ('SCM checkout'){
-		git "https://gitlab.com/mbabilo/experitest"
+		git "https://github.com/orvilia/seleniumjavaci"
 		}
 	stage ('Build'){
-    	dir("comtest") {
+    	dir("seleniumjavaci") {
 	   sh "mvn clean install"
        }
        	dir("comtest/target") {
