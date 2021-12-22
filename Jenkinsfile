@@ -1,8 +1,8 @@
 node {
-	stage ('SCM checkout'){
+	stage ('Code Checkin'){
 		git "https://github.com/orvilia/seleniumjavaci"
 		}
-	stage ('Test'){
+	stage ('Automation Build'){
        
 	   bat "mvn clean install"
        }
